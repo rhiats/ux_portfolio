@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rhia Singh — UX Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">Rhia Singh</a>
+
+      <!-- CSS-only mobile toggle -->
+      <input id="nav-toggle" class="nav-toggle" type="checkbox" aria-label="Open navigation" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+      </label>
+
+      <nav class="site-nav" role="navigation" aria-label="Main">
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="cta" href="#contact">Hire me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <h1>Designing simple, human-centered product experiences</h1>
+        <p class="lead">I'm a Cornell Tech Information Systems student with a background in analytics, education, and health tech, passionate about designing data-driven, user-centered experiences that create meaningful impact.</p>
+        <p><a class="primary-btn" href="#work">View My Work</a></p>
+      </div>
+    </section>
+
+    <section id="work" class="section container">
+      <h2 class="section-title">Selected Projects</h2>
+
+      <div class="grid">
+        <!-- Project card 1 -->
+        <article class="card">
+          <a href="#project-1" class="card-link" aria-describedby="p1-desc">
+            <img src="https://via.placeholder.com/600x380?text=Project+1" alt="Screenshot of Project 1" />
+            <div class="card-content">
+              <h3>Medication Tracker (UX case study)</h3>
+              <p id="p1-desc" class="muted">Research, wireframing, and prototyping for medication adherence app.</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- Project card 2 -->
+        <article class="card">
+          <a href="#project-2" class="card-link" aria-describedby="p2-desc">
+            <img src="https://via.placeholder.com/600x380?text=Project+2" alt="Screenshot of Project 2" />
+            <div class="card-content">
+              <h3>Onboarding Redesign</h3>
+              <p id="p2-desc" class="muted">Improved activation through progressive disclosure and microcopy.</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- Project card 3 -->
+        <article class="card">
+          <a href="#project-3" class="card-link" aria-describedby="p3-desc">
+            <img src="https://via.placeholder.com/600x380?text=Project+3" alt="Screenshot of Project 3" />
+            <div class="card-content">
+              <h3>Marketplace Browsing</h3>
+              <p id="p3-desc" class="muted">Search and filter UX for product discovery.</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- add more cards as needed -->
+      </div>
+    </section>
+
+    <section id="about" class="section light">
+      <div class="container about-grid">
+        <div>
+          <h2>About me</h2>
+          <p>I design mobile and web experiences with a focus on accessibility, simple flows, and measurable outcomes. I enjoy user research, prototyping, and collaborating with engineers to ship polished products.</p>
+
+          <h3>Skills</h3>
+          <ul class="skills">
+            <li>User research</li>
+            <li>Wireframing & prototyping</li>
+            <li>Interaction design</li>
+            <li>Usability testing</li>
+            <li>Accessibility</li>
+          </ul>
+        </div>
+
+        <aside aria-labelledby="contact" class="contact-card">
+          <h3 id="contact">Contact</h3>
+          <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+          <p>Location: City, Country</p>
+          <p><a class="secondary-btn" href="mailto:you@example.com">Get in touch</a></p>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <strong>Your Name</strong> — UX Designer</p>
+        <nav aria-label="Footer">
+          <ul class="social">
+            <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+            <li><a href="#" aria-label="Dribbble">Dribbble</a></li>
+            <li><a href="#" aria-label="GitHub">GitHub</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Project detail overlays (CSS-only modal using :target) -->
+  <section id="project-1" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-labelledby="proj1-title">
+      <a href="#work" class="modal-close" aria-label="Close">Close ×</a>
+      <h3 id="proj1-title">Medication Tracker — Case Study</h3>
+      <p class="muted">Role: UX Designer • Methods: Interviews, Wireframes, Prototype</p>
+      <p>Summary: Redesigned medication reminders with simplified forms and clearer confirmation states. Conducted usability tests (n=8) and increased adherence mock success rate by +22% in prototype tests.</p>
+      <p><strong>Key artifacts:</strong></p>
+      <ul>
+        <li>User flows</li>
+        <li>Low-fidelity wireframes</li>
+        <li>Clickable prototype</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="project-2" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-labelledby="proj2-title">
+      <a href="#work" class="modal-close" aria-label="Close">Close ×</a>
+      <h3 id="proj2-title">Onboarding Redesign</h3>
+      <p class="muted">Role: Product Designer • Methods: Heuristic eval, A/B tests</p>
+      <p>Summary: Simplified multi-step signup by eliminating optional fields and introducing contextual help. Reduced time to activation and lowered drop-off at step 2.</p>
+    </div>
+  </section>
+
+  <section id="project-3" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-labelledby="proj3-title">
+      <a href="#work" class="modal-close" aria-label="Close">Close ×</a>
+      <h3 id="proj3-title">Marketplace Browsing</h3>
+      <p class="muted">Role: UX Researcher • Methods: Card sorts, prototypes</p>
+      <p>Summary: Reworked categorization and filter UX after card-sorting sessions; prototypes showed quicker discovery for target tasks.</p>
+    </div>
+  </section>
+
+</body>
+</html>
