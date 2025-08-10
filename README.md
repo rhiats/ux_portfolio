@@ -1,2 +1,2 @@
-# ux_portfolio
+# UX Portfolio
 Portfolio of UX projects
